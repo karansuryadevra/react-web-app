@@ -17,6 +17,7 @@ pipeline
 			{
 				script
 				{
+					cleanWs()
 					checkout changelog: false, 
 					poll: false, 
 					scm: 
@@ -41,6 +42,12 @@ pipeline
 					]
 				}
 			}
+		sh '''
+		ls -ltr
+		npm install
+		npm run build
+		ls -ltr
+		'''
 		}
 	}
 }
