@@ -43,6 +43,7 @@ pipeline
      cp -r frontend-${BUILD_NUMBER}.tar deploy/
      cd deploy
      tar -xvf frontend-${BUILD_NUMBER}.tar
+     rm -rf frontend-${BUILD_NUMBER}.tar
      ls -ltr      
      '''
     }
