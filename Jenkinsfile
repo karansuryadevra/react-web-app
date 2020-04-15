@@ -48,7 +48,7 @@ pipeline
      gsutil acl ch -u AllUsers:R gs://karan-suryadevra-2020
      gsutil defacl set public-read gs://karan-suryadevra-2020
      gsutil web set -m index.html -e index.html gs://karan-suryadevra-2020
-     gsuitl cp -r * gs://karan-suryadevra-2020
+     gsutil cp -r * gs://karan-suryadevra-2020
      gsutil setmeta -h "content-type: image/svg+xml" gs://karan-suryadevra-2020/static/media/*.svg
      '''
     }
