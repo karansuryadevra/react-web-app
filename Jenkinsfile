@@ -22,6 +22,8 @@ pipeline
          ls -ltr
          npm install
          npm run build
+         cd build/
+         tar -cvf frontend-${BUILD_NUMBER}.tar *
          ls -ltr
          '''
           
